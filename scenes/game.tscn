@@ -14,14 +14,12 @@ region_enabled = true
 region_rect = Rect2(0, 0, 10000, 10000)
 metadata/_edit_lock_ = true
 
+[node name="Asteroids" type="Node2D" parent="."]
+z_index = 50
+
+[node name="Asteroid" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(475, 522)
+
 [node name="Player" parent="." instance=ExtResource("2_yqjtg")]
-position = Vector2(358, 254)
-
-[node name="Asteroid" parent="." instance=ExtResource("3_lnu2h")]
-position = Vector2(150, 538)
-
-[node name="Asteroid2" parent="." instance=ExtResource("3_lnu2h")]
-position = Vector2(478, 477)
-
-[node name="Asteroid3" parent="." instance=ExtResource("3_lnu2h")]
-position = Vector2(1009, 525)
+z_index = 100
+position = Vector2(295, 369)
