@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbh0fr2gy5q22"]
+
+[ext_resource type="Texture2D" uid="uid://ddxoy11ss6l5r" path="res://assets/textures/star_background.png" id="1_uwrxv"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Stars" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(640, 360)
+texture = ExtResource("1_uwrxv")
+region_enabled = true
+region_rect = Rect2(0, 0, 1280, 720)
