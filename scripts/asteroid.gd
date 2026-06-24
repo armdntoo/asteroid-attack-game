@@ -2,11 +2,13 @@ extends RigidBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	my_function()
+	var random_force_x = get_random_force(100.0)
+	var random_force_y = get_random_force()
 	
-
-	var my_vector := Vector2(-100.0, -100.0)
+	var my_vector := Vector2(random_force_x, random_force_y)
+	# print(my_vector)
+	
 	apply_impulse(my_vector)
-
-func my_function() -> void:
-	print("this is my test function!")
+	
+func get_random_force(force_range := 50.0) -> float:
+		return randf_range(-force_range, force_range)

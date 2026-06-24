@@ -18,8 +18,23 @@ metadata/_edit_lock_ = true
 z_index = 50
 
 [node name="Asteroid" parent="Asteroids" instance=ExtResource("3_lnu2h")]
-position = Vector2(475, 522)
+position = Vector2(624, 548)
+
+[node name="Asteroid2" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(845, 377)
+
+[node name="Asteroid3" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(1071, 202)
+
+[node name="Asteroid4" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(1154, 452)
+
+[node name="Asteroid5" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(341, 381)
+
+[node name="Asteroid6" parent="Asteroids" instance=ExtResource("3_lnu2h")]
+position = Vector2(141, 548)
 
 [node name="Player" parent="." instance=ExtResource("2_yqjtg")]
 z_index = 100
-position = Vector2(295, 369)
+position = Vector2(457, 156)
