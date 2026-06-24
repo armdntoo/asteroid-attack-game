@@ -1,15 +1,8 @@
 extends RigidBody2D
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
-			
-func _process(delta: float) -> void:
-	pass
+var move_force := 1500.0
 	
 func _physics_process(_delta: float) -> void:
-	var move_force := 1500.0
-
 	if Input.is_action_pressed("move_right"):
 		apply_force(Vector2(move_force, 0.0))
 	if Input.is_action_pressed("move_left"):
